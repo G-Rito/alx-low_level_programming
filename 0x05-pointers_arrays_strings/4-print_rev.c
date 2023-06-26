@@ -11,7 +11,7 @@ void print_rev(char *s)
 int botelle = 0;
 int i;
 
-while (*s != '\n')
+while (*s != '\0')
 {
 botelle++;
 s++;
