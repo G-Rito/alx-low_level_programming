@@ -20,6 +20,6 @@ for ( ; r < i ; r++)
 {
 dest[r] = src[r];
 }
-dest[1] = '\0';
+dest[i] = '\0';
 return (dest);
 }
