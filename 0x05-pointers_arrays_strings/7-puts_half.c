@@ -2,14 +2,23 @@
 
 /**
  * puts_half -  prints half of a string, followed by a new line
+ *  if odd len, n = (length_of_the_string - 1) / 2
  * @str: input string
- * @n: lenghth of the string
  * return: string
  */
 
 void puts_half(char *str)
 {
+int a, n, lng;
 
-n = (length_of_the_string - 1) / 2
+	lng = 0;
+	for (a = 0; str[a] != '\0'; a++)
+		lng++;
+	n = (lng / 2);
+	if ((lng % 2) == 1)
+		n = ((lng + 1) / 2);
+	for (a = n; str[a] != '\0'; a++)
+		_putchar(str[a]);
+	_putchar('\n');
 
 }
